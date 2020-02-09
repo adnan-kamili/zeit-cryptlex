@@ -1,0 +1,6 @@
+{
+    "env": {
+        "CRYPTLEX_ACCESS_TOKEN": "@cryptlex-access-token",
+        "MAILGUN_APIKEY": "@mailgun-apikey"
+    }
+}

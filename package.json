@@ -1,0 +1,12 @@
+{
+  "name": "market-leader-cryptlexs",
+  "version": "1.0.0",
+  "description": "An example Node.js app which handles license generation and renewal.",
+  "author": "Cryptlex",
+  "license": "ISC",
+  "dependencies": {
+    "mailgun-js": "^0.22.0",
+    "node-fetch": "^2.1.2",
+    "uuid": "^3.4.0"
+  }
+}
