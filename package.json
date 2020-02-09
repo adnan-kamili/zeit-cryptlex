@@ -4,6 +4,9 @@
   "description": "An example Node.js app which handles license generation and renewal.",
   "author": "Cryptlex",
   "license": "ISC",
+  "scripts": {
+    "build": "npm i"
+  },
   "dependencies": {
     "mailgun-js": "^0.22.0",
     "node-fetch": "^2.1.2",
