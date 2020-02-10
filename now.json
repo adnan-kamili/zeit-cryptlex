@@ -4,15 +4,7 @@
         "MAILGUN_APIKEY": "@mailgun-apikey"
     },
     "functions": {
-        "api/create-license.js": {
-            "memory": 1024,
-            "maxDuration": 10
-        },
-        "api/renew-license.js": {
-            "memory": 1024,
-            "maxDuration": 10
-        },
-        "api/delete-license.js": {
+        "api/*.js": {
             "memory": 1024,
             "maxDuration": 10
         }
