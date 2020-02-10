@@ -1,6 +1,9 @@
 const uuidv4 = require('uuid/v4');
 const CryptlexApi = require('./_utils/CryptlexApi');
 const { MailgunService } = require('./_utils/MailgunService');
+const config = require('./_utils/config.js');
+
+const productId = config.productId;
 
 module.exports = async (req, res) => {
     let event = req.body;
