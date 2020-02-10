@@ -58,5 +58,18 @@ class CryptlexApi {
         const revokedLicense = await httpClient.patch(`${url}/${license.id}`, { revoked: true });
         return revokedLicense;
     }
+
+    static async deleteLicense(productId, metadataKey, metadataValue) {
+        const url = `${apiBaseUrl}/licenses`;
+        // get the license
+        console.log("fetching existing license...");
+        let licenses = await httpClient.get(`${url}?productId=${productId}&metadataKey=${metadataKey}&metadataValue=${metadataValue}`);
+        if (!licenses.length) {
+            throw Error("License does not exist!");
+        }
+        const license = licenses[0];
+        console.log("deleting license...");
+        await httpClient.delete(`${url}/${license.id}`);
+    }
 }
 module.exports = CryptlexApi;

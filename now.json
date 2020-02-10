@@ -2,5 +2,19 @@
     "env": {
         "CRYPTLEX_ACCESS_TOKEN": "@cryptlex-access-token",
         "MAILGUN_APIKEY": "@mailgun-apikey"
+    },
+    "functions": {
+        "api/create-license.js": {
+            "memory": 1024,
+            "maxDuration": 10
+        },
+        "api/renew-license.js": {
+            "memory": 1024,
+            "maxDuration": 10
+        },
+        "api/delete-license.js": {
+            "memory": 1024,
+            "maxDuration": 10
+        }
     }
 }

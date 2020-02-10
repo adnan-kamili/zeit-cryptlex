@@ -12,8 +12,8 @@ module.exports = (req, res) => {
     const subscription = event.data.object;
 
     if (subscription.status == 'canceled') {
-        await CryptlexApi.revokeLicense(productId, 'customer_id', subscription.customer);
-        res.json({ message: "License revoked!" });
+        await CryptlexApi.deleteLicense(productId, 'customer_id', subscription.customer);
+        res.json({ message: "License deleted!" });
     } else {
         res.json({ subscriptionStatus: subscription.status });
     }
