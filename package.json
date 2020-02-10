@@ -5,7 +5,7 @@
   "author": "Cryptlex",
   "license": "ISC",
   "scripts": {
-    "build": "npm i"
+    "build": ""
   },
   "dependencies": {
     "mailgun-js": "^0.22.0",
