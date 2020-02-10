@@ -1,4 +1,4 @@
-const CryptlexApi = require('../_utils/CryptlexApi');
+const CryptlexApi = require('./_utils/CryptlexApi');
 
 module.exports = (req, res) => {
     let event = req.body;
